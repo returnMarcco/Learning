@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <script src="JavascriptStudy.js"></script>   
+  </head>
+  <body>
+    <p id="myDivID"></p>
+    <script>writeToEle("myDivID", "Inserted with the getElementById.innerHtml method")</script>
+
+    <p>Testing Variables:</p>
+    <div id="varStyle"></div>
+    <p>Testing Ternary:</p>
+    <div id="testTernary"></div>
+    <script>
+    testVariables("varStyle", 3.15);
+    testTernaryOperators("testTernary", 10);
+    </script>
+
+    <p>Testing Event Handling:</p>
+    <button onmouseover="this.innerHTML = Date()">Mouseover to display date</button><br><br>
+    <button onclick="windowAlert('ALERT')">CLICK ME</button>
+    
+    <!--
+    Common HTML Event Attributes
+    onclick
+    onchange 
+    onmouseover
+    onmouseout
+    onkeydown
+    onload
+    -->
+  
+    <p>String Operations</p>
+    <button onclick="stringSliceDocWrite('testStringOperations', 'This Will Be Sliced', 13)">This Will Be Sliced</button>
+    <p id="testStringOperations"></p>
+
+    <b><p>Testing Loops</p></b>
+    <p>For Loop: </p>
+    <p id="testFor"></p>
+    <script>testForLoop("testFor")</script>
+    <p>For In Loop (Object Key/Value Output): </p>
+    <p id="testForIn"></p>
+    <script>testForIn("testForIn")</script>
+    <p>For Of Loop (Iterate Over An Array) :</p>
+    <p id="testForOf"></p>
+    <script>testForOf("testForOf")</script>
+
+    <p>Testing Foreach Method (callback on each element in array):</p>
+    <p id="testForEach"></p>
+    <script>
+      const myNumArr = [1, 2, 3, 4, 5];
+      testForEach(myNumArr, 'testForEach');
+    </script>
+    <p>Testing Map Method (callback on each element in array):</p>
+    <p id="testMap"></p>
+    <script>
+      const myStringArr = ['This', 'array', 'has', 'been', 'mapped'];
+      testMapFunction(myStringArr, 'testMap');
+      testSets();
+      console.log('Testing Maps');
+      testMap();
+    </script>
+   </body>
+</html>
