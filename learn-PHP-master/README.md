@@ -1,2 +1,2 @@
 # PHP-Study
-As the name suggests..
+Learn PHP.
